@@ -127,6 +127,7 @@ function generateStaticData(
         depth: 2,
         title,
         url: `#${id}`,
+        method: item?.method?.toUpperCase() ?? "GET",
       });
       structuredData.headings.push({
         content: title,
